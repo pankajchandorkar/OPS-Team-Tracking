@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css4?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./chosen/chosen.min.css" />
+    <link rel="stylesheet" href="./css/datepicker.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Web Ops Team Tracking</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-inputs-wrap">
+                <!-- Operator Name -->
+                <div class="input-wrap operator-name">
+                    <div class="operator-input-wrap">
+                        <select class="chosen" name="" id="">
+                            <option value="">Operator Name (CRS ID)</option>
+                            <option value="">Operator Name (CRS ID)</option>
+                            <option value="">Operator Name (CRS ID)</option>
+                            <option value="">Operator Name (CRS ID)</option>
+                            <option value="">Operator Name (CRS ID)</option>
+                            <option value="">Operator Name (CRS ID)</option>
+                        </select>
+                        <button class="btn-operator"></button>
+                    </div>
+                </div>
+                <!-- Call Type -->
+                <div class="call-type">
+                    <input class="custome_radio" type="radio" name="rdoCallType" id="rdoCallType-1"
+                        checked="checked" /><label for="rdoCallType-1">Physical Meeting</label>
+                    <input class="custome_radio" type="radio" name="rdoCallType" id="rdoCallType-2" /><label
+                        for="rdoCallType-2">Call</label>
+                    <input class="custome_radio" type="radio" name="rdoCallType" id="rdoCallType-3" /><label
+                        for="rdoCallType-3">Exotel Call</label>
+                </div>
+                <div class="input-wrap spoken-person">
+                    <input class="form-input" type="text" name="txtSpokenPerson" id="txtSpokenPerson"
+                        placeholder="Spoken/Met Person" />
+                </div>
+                <div class="input-wrap contact-number">
+                    <input class="form-input" type="text" name="txtContactNumber" id="txtContactNumber"
+                        placeholder="Contact Number" />
+                </div>
+                <div class="input-wrap start-date">
+                    <input class="form-input" type="text" name="txtStartDate" id="txtStartDate" placeholder="Date" />
+                </div>
+                <div class="input-wrap start-time">
+                    <select class="chosen" name="" id="">
+                        <option value="">Start Time</option>
+
+                        <option value="12:00am">12:00am</option>
+                        <option value="12:15am">12:15am</option>
+                        <option value="12:30am">12:30am</option>
+                        <option value="12:45am">12:45am</option>
+
+                        <option value="1:00am">1:00am</option>
+                        <option value="1:15am">1:15am</option>
+                        <option value="1:30am">1:30am</option>
+                        <option value="1:45am">1:45am</option>
+
+                        <option value="2:00am">2:00am</option>
+                        <option value="2:15am">2:15am</option>
+                        <option value="2:30am">2:30am</option>
+                        <option value="2:45am">2:45am</option>
+
+                        <option value="3:00am">3:00am</option>
+                        <option value="3:15am">3:15am</option>
+                        <option value="3:30am">3:30am</option>
+                        <option value="3:45am">3:45am</option>
+
+                        <option value="4:00am">4:00am</option>
+                        <option value="4:15am">4:15am</option>
+                        <option value="4:30am">4:30am</option>
+                        <option value="4:45am">4:45am</option>
+
+                        <option value="5:00am">5:00am</option>
+                        <option value="5:15am">5:15am</option>
+                        <option value="5:30am">5:30am</option>
+                        <option value="5:45am">5:45am</option>
+
+                        <option value="6:00am">6:00am</option>
+                        <option value="6:15am">6:15am</option>
+                        <option value="6:30am">6:30am</option>
+                        <option value="6:45am">6:45am</option>
+
+                        <option value="7:00am">7:00am</option>
+                        <option value="7:15am">7:15am</option>
+                        <option value="7:30am">7:30am</option>
+                        <option value="7:45am">7:45am</option>
+
+                        <option value="8:00am">8:00am</option>
+                        <option value="8:15am">8:15am</option>
+                        <option value="8:30am">8:30am</option>
+                        <option value="8:45am">8:45am</option>
+
+                        <option value="9:00am">9:00am</option>
+                        <option value="9:15am">9:15am</option>
+                        <option value="9:30am">9:30am</option>
+                        <option value="9:45am">9:45am</option>
+
+                        <option value="10:00am">10:00am</option>
+                        <option value="10:15am">10:15am</option>
+                        <option value="10:30am">10:30am</option>
+                        <option value="10:45am">10:45am</option>
+
+                        <option value="11:00am">11:00am</option>
+                        <option value="11:15am">11:15am</option>
+                        <option value="11:30am">11:30am</option>
+                        <option value="11:45am">11:45am</option>
+
+                        <option value="12:00pm">12:00pm</option>
+                        <option value="12:15pm">12:15pm</option>
+                        <option value="12:30pm">12:30pm</option>
+                        <option value="12:45pm">12:45pm</option>
+
+                        <option value="1:00pm">1:00pm</option>
+                        <option value="1:15pm">1:15pm</option>
+                        <option value="1:30pm">1:30pm</option>
+                        <option value="1:45pm">1:45pm</option>
+
+                        <option value="2:00pm">2:00pm</option>
+                        <option value="2:15pm">2:15pm</option>
+                        <option value="2:30pm">2:30pm</option>
+                        <option value="2:45pm">2:45pm</option>
+
+                        <option value="3:00pm">3:00pm</option>
+                        <option value="3:15pm">3:15pm</option>
+                        <option value="3:30pm">3:30pm</option>
+                        <option value="3:45pm">3:45am</option>
+
+                        <option value="4:00pm">4:00pm</option>
+                        <option value="4:15pm">4:15pm</option>
+                        <option value="4:30pm">4:30pm</option>
+                        <option value="4:45pm">4:45pm</option>
+
+                        <option value="5:00pm">5:00pm</option>
+                        <option value="5:15pm">5:15pm</option>
+                        <option value="5:30pm">5:30pm</option>
+                        <option value="5:45pm">5:45pm</option>
+
+                        <option value="6:00pm">6:00pm</option>
+                        <option value="6:15pm">6:15pm</option>
+                        <option value="6:30pm">6:30pm</option>
+                        <option value="6:45pm">6:45am</option>
+
+                        <option value="7:00pm">7:00pm</option>
+                        <option value="7:15pm">7:15pm</option>
+                        <option value="7:30pm">7:30pm</option>
+                        <option value="7:45pm">7:45pm</option>
+
+                        <option value="8:00pm">8:00pm</option>
+                        <option value="8:15pm">8:15pm</option>
+                        <option value="8:30pm">8:30pm</option>
+                        <option value="8:45pm">8:45pm</option>
+
+                        <option value="9:00pm">9:00pm</option>
+                        <option value="9:15pm">9:15pm</option>
+                        <option value="9:30pm">9:30pm</option>
+                        <option value="9:45pm">9:45pm</option>
+
+                        <option value="10:00pm">10:00pm</option>
+                        <option value="10:15pm">10:15pm</option>
+                        <option value="10:30pm">10:30pm</option>
+                        <option value="10:45pm">10:45pm</option>
+
+                        <option value="11:00pm">11:00pm</option>
+                        <option value="11:15pm">11:15pm</option>
+                        <option value="11:30pm">11:30pm</option>
+                        <option value="11:45pm">11:45pm</option>
+                    </select>
+                </div>
+                <div class="input-wrap duration">
+                    <select class="chosen" name="" id="">
+                        <option value="">Duration In Mins</option>
+
+                        <option value="00">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                        <option value="60">60 (1 Hrs)</option>
+
+                        <option value="75">75</option>
+                        <option value="90">90</option>
+                        <option value="105">105</option>
+                        <option value="120">120 (2 Hrs)</option>
+
+                        <option value="135">135</option>
+                        <option value="150">150</option>
+                        <option value="165">165</option>
+                        <option value="180">180 (3 Hrs)</option>
+
+                        <option value="195">195</option>
+                        <option value="210">210</option>
+                        <option value="225">225</option>
+                        <option value="240">240 (4 Hrs)</option>
+
+                        <option value="255">255</option>
+                        <option value="270">270</option>
+                        <option value="285">285</option>
+                        <option value="300">300 (5 Hrs)</option>
+
+                        <option value="315">315</option>
+                        <option value="330">330</option>
+                        <option value="345">345</option>
+                        <option value="360">360 (6 Hrs)</option>
+
+                        <option value="375">375</option>
+                        <option value="390">390</option>
+                        <option value="405">405</option>
+                        <option value="420">420 (7 Hrs)</option>
+
+                        <option value="435">435</option>
+                        <option value="450">450</option>
+                        <option value="465">465</option>
+                        <option value="480">480 (8 Hrs)</option>
+                    </select>
+                </div>
+                <div class="btn-save">
+                    <button class="btnSave">Save</button>
+                </div>
+                <div class="btn-close">
+                    <button class="btnClose"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px"
+                            viewBox="0 0 14.959 14.959" enable-background="new 0 0 14.959 14.959" xml:space="preserve"
+                            fill="#f9aa33">
+                            <path d="M8.505,7.479l6.454,6.454l-1.025,1.026L7.478,8.505l-6.452,6.454L0,13.933l6.453-6.454L0,1.026L1.026,0l6.452,6.453
+                        L13.934,0l1.025,1.026L8.505,7.479z"></path>
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <!-- Commercial (Bus,Cargo, MAVEN) -->
+            <div class="commercial-block mr10">
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        Commercial (Bus,Cargo, MAVEN)
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="commercial-inner-block1">
+                    <div class="commercial-inner-block1-heading">
+                        Bus
+                    </div>
+                    <div class="commercial-inner-block1-data">
+                        <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-1"
+                            checked="checked" /><label for="rdoCommBus-1">Monthly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-2" /><label
+                            for="rdoCommBus-2">Quaterly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-3" /><label
+                            for="rdoCommBus-3">Half Yearly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-4" /><label
+                            for="rdoCommBus-4">Yearly</label>
+                    </div>
+                    <div class="commercial-inner-block1-line">
+                        <div class="border-line"></div>
+                    </div>
+                    <div class="commercial-inner-block1-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                Monthly Per Mac (+GST)
+                            </div>
+                            <div class="data-wrap-right">
+                                ₹1234
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block1-heading">
+                        Cargo
+                    </div>
+                    <div class="commercial-inner-block1-data">
+                        <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-1"
+                            checked="checked" /><label for="rdoCommCargo-1">Monthly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-2" /><label
+                            for="rdoCommCargo-2">Quaterly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-3" /><label
+                            for="rdoCommCargo-3">Half Yearly</label>
+                        <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-4" /><label
+                            for="rdoCommCargo-4">Yearly</label>
+                    </div>
+                    <div class="commercial-inner-block1-line">
+                        <div class="border-line"></div>
+                    </div>
+                    <div class="commercial-inner-block1-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                Monthly Volume (+GST)
+                            </div>
+                            <div class="data-wrap-right">
+                                10%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block1-heading">
+                        Maven
+                    </div>
+                    <div class="commercial-inner-block1-data bottom-round">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                Monthly Per User (+GST)
+                            </div>
+                            <div class="data-wrap-right">
+                                ₹1234
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="commercial-inner-block2">
+                    <div class="commercial-inner-block2-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                Number Of Branches Approved
+                            </div>
+                            <div class="data-wrap-right">
+                                125
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block2-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                Number Of MAC Approved
+                            </div>
+                            <div class="data-wrap-right">
+                                30
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block2-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                BUS CRS Enabled
+                            </div>
+                            <div class="data-wrap-right color-green">
+                                Yes
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block2-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                No Of Branches Booked (30 days)
+                            </div>
+                            <div class="data-wrap-right">
+                                89
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block2-data">
+                        <div class="data-wrap">
+                            <div class="data-wrap-left">
+                                No of User Booked (30 days)
+                            </div>
+                            <div class="data-wrap-right">
+                                26
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="commercial-inner-block3">
+                    <div class="commercial-inner-block3-heading">
+                        <div class="data-row">
+                            <div class="data-col1">Branch Name (Monthly Amt)</div>
+                            <div class="data-col2">Bus Amt</div>
+                            <div class="data-col3">Cargo Amt</div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block3-data">
+                        <div class="data-row">
+                            <div class="data-col1">Mantis Technologies Bangalore</div>
+                            <div class="data-col2"> ₹1234</div>
+                            <div class="data-col3"> ₹1234</div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block3-data">
+                        <div class="data-row">
+                            <div class="data-col1">Mantis Technologies Bangalore</div>
+                            <div class="data-col2"> ₹1234</div>
+                            <div class="data-col3"> ₹1234</div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block3-data">
+                        <div class="data-row">
+                            <div class="data-col1">Mantis Technologies Bangalore</div>
+                            <div class="data-col2"> ₹1234</div>
+                            <div class="data-col3"> ₹1234</div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block3-data">
+                        <div class="data-row">
+                            <div class="data-col1">Mantis Technologies Bangalore</div>
+                            <div class="data-col2"> ₹1234</div>
+                            <div class="data-col3"> ₹1234</div>
+                        </div>
+                    </div>
+                    <div class="commercial-inner-block1-line">
+                        <div class="border-line"></div>
+                    </div>
+                    <div class="commercial-inner-block3-data footer">
+                        <div class="data-row">
+                            <div class="data-col1">&nbsp;</div>
+                            <div class="data-col2 txtBold"> ₹1234</div>
+                            <div class="data-col3 txtBold"> ₹1234</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="crs-support-block mr10">
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        CRS Support
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="question-answer-container">
+                    <div class="question-answer-content">
+                        <div class="que-ans-wrap">
+                            <div class="question">01: CRS EXE Installation</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">02: New Service/ Trip Configuration</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">03: Changes in Existing Service/ Trip</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">04: Extra Service/ Trip Configuration</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">05: Quota Add/ Remove (Branch/ Agent)</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">06: Chart Transfer/ Seat Edit/ Arrangement Transfer</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">07: Master Bus Number/ Bus No Related</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">08: User Creation & Role Right Related</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">09: Driver/ Pickup Man Related</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">10: Branch/ Agent Creation</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="microsite-block mr10">
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        Microsite
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="microsite-inner-block1">
+                    <div class="microsite-inner-block1-heading">
+                        <div class="data-row">
+                            <div class="data-col1">Microsite</div>
+                            <div class="data-col2">Commission</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">MS URL Agent Name (ID)</div>
+                            <div class="data-col2"> 5%</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">Android App Agent Name (ID)</div>
+                            <div class="data-col2"> 5%</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">IOS App Agent Name (ID)</div>
+                            <div class="data-col2"> 6%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blue-box mt10">
+                    <div class="blue-box-header">
+                        Redbus, PayTM
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="microsite-inner-block2">
+                    <div class="microsite-inner-block1-heading">
+                        <div class="data-row">
+                            <div class="data-col1">Redbus API</div>
+                            <div class="data-col2">Yes/ No</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">% of Volume (+GST)</div>
+                            <div class="data-col2"> 2.2%</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">Lumsum (+GST)</div>
+                            <div class="data-col2"> ₹1234</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-heading">
+                        <div class="data-row">
+                            <div class="data-col1">PayTm API</div>
+                            <div class="data-col2">Yes/ No</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">% of Volume (+GST)</div>
+                            <div class="data-col2"> 2.2%</div>
+                        </div>
+                    </div>
+                    <div class="microsite-inner-block1-data">
+                        <div class="data-row">
+                            <div class="data-col1">Lumsum (+GST)</div>
+                            <div class="data-col2"> ₹1234</div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="sms-block mr10">
+                <div class="blue-box border-round">
+                    <div class="blue-box-header">
+                        SMS
+                    </div>
+                    <div class="blue-box-body-large">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="blue-box mt10 border-round">
+                    <div class="blue-box-header">
+                        SMS
+                    </div>
+                    <div class="blue-box-body-large">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="blue-box mt10 border-round">
+                    <div class="blue-box-header">
+                        SMS
+                    </div>
+                    <div class="blue-box-body-large">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gps-block mr10">
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        GPS Opportunity
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="gps-inner-block">
+                    <div class="gps-inner-block-heading">
+                        <div class="data-row">
+                            <div class="data-col1">Bus No</div>
+                            <div class="data-col2">Master Bus No</div>
+                            <div class="data-col3">GPS Vendor</div>
+                            <div class="data-col4">M Commercial</div>
+                        </div>
+                    </div>
+                    <div class="gps-inner-block-container">
+                        <div class="gps-inner-block-content">
+                            <div class="data-row">
+                                <div class="data-col1">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col2">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col3">
+                                    Mantis
+                                </div>
+                                <div class="data-col4">
+                                    ₹1234
+                                </div>
+                            </div>
+                            <div class="data-row">
+                                <div class="data-col1">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col2">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col3">
+                                    Punbus
+                                </div>
+                                <div class="data-col4">
+                                    ₹1234
+                                </div>
+                            </div>
+                            <div class="data-row">
+                                <div class="data-col1">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col2">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col3">
+                                    Mantis-Arya Omni Talk
+                                </div>
+                                <div class="data-col4">
+                                    ₹1234
+                                </div>
+                            </div>
+
+                            <div class="data-row">
+                                <div class="data-col1">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col2">
+                                    RJ27PA9499
+                                </div>
+                                <div class="data-col3">
+                                    Arya Omni Talk
+                                </div>
+                                <div class="data-col4">
+                                    ₹1234
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="feature-block mr10">
+
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        Feature Explanation/ Configuration
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="question-answer-container">
+                    <div class="question-answer-content">
+                        <div class="que-ans-wrap">
+                            <div class="question">01: New SMS Policy with DLT Lock</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">02: Automatic Express Checkout with Discount</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">03: QR Code Payment Solution</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">04: Readbus Trigger, Masking</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">05: Online Partial/ Full Refund Cancellation from CRS</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">06: Child Company Right Restrictions</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">07: Loyalty/ Discout (Occupancy Wise Time Wise)/ Redbus</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">08: MAVEN New Updates</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">09: GPS Solution, Fuel Expense Tracker, Tracker + Report</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">10: Redbus/ PayTM Recon Solution</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collections-block">
+
+                <div class="blue-box">
+                    <div class="blue-box-header">
+                        Collections
+                    </div>
+                    <div class="blue-box-body">
+                        <textarea name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    </div>
+                </div>
+                <div class="question-answer-container">
+                    <div class="question-answer-content">
+                        <div class="que-ans-wrap">
+                            <div class="question">01: New SMS Policy with DLT Lock</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">02: Automatic Express Checkout with Discount</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">03: QR Code Payment Solution</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">04: Readbus Trigger, Masking</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">05: Online Partial/ Full Refund Cancellation from CRS</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">06: Child Company Right Restrictions</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">07: Loyalty/ Discout (Occupancy Wise Time Wise)/ Redbus</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">08: MAVEN New Updates</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">09: GPS Solution, Fuel Expense Tracker, Tracker + Report</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                        <div class="que-ans-wrap">
+                            <div class="question">10: Redbus/ PayTM Recon Solution</div>
+                            <div class="answer"><input type="text" placeholder="Write Comment"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./chosen/chosen.jquery.min.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".chosen").chosen();
+
+            $("#txtStartDate").datepicker({
+                numberOfMonths: 1, //show 2 months
+                dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], //day names
+                firstDay: 1, //start with monday,
+                minDate: "0d",
+                maxDate: "90d",
+
+                dateFormat: "D, d-M-yy",
+                onSelect: function (date, evnt) { },
+            });
+        });
+    </script>
+</body>
+
+</html>
