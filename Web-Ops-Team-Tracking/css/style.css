@@ -266,6 +266,8 @@ textarea {
 .form-container {
   background: #ffffff;
   padding: 12px 25px 12px 25px;
+  width: 2980px;
+  box-shadow: 0px 1px 3px #ccc;
 }
 
 .form-inputs-wrap {
@@ -348,7 +350,7 @@ textarea {
   width: 150px;
 }
 .duration .chosen-container-single .chosen-drop {
-  width: 143px;
+  width: 160px;
 }
 
 /* button save wrap */
@@ -395,8 +397,8 @@ textarea {
 .result-container {
   padding: 15px 25px 15px 25px;
   display: flex;
-  width: 2905px;
-  color: #686868;
+  width: 2980px;
+  color: #434343;
 }
 
 .result-container .custome_radio:checked + label:after,
@@ -429,7 +431,7 @@ textarea {
 }
 
 .gps-block {
-  width: 415px;
+  width: 490px;
 }
 
 .feature-block {
@@ -484,6 +486,7 @@ textarea {
   border: solid 1px #e7e7e7;
   height: 315px;
   border-radius: 0 0 7px 7px;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .commercial-inner-block1-heading {
@@ -537,6 +540,7 @@ textarea {
   border-radius: 7px 7px 7px 7px;
   background: #fff;
   padding: 10px 0px;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .commercial-inner-block2-data {
@@ -554,6 +558,7 @@ textarea {
   height: 193px;
   border-radius: 7px 7px 7px 7px;
   background: #fff;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .commercial-inner-block3-heading {
@@ -602,6 +607,7 @@ textarea {
   border: solid 1px #e7e7e7;
   background: #fff;
   border-radius: 0 0 7px 7px;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .question-answer-content {
@@ -626,22 +632,22 @@ textarea {
 }
 
 /* width */
-.result-container ::-webkit-scrollbar {
+.container ::-webkit-scrollbar {
   width: 3px;
 }
 
 /* Track */
-.result-container ::-webkit-scrollbar-track {
+.container ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-.result-container ::-webkit-scrollbar-thumb {
+.container ::-webkit-scrollbar-thumb {
   background: #888;
 }
 
 /* Handle on hover */
-.result-container ::-webkit-scrollbar-thumb:hover {
+.container ::-webkit-scrollbar-thumb:hover {
   background: #44678f;
 }
 
@@ -650,6 +656,7 @@ textarea {
   height: 140px;
   border-radius: 0 0 7px 7px;
   background: #fff;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .microsite-inner-block1-heading {
@@ -682,6 +689,7 @@ textarea {
   height: 366px;
   border-radius: 0 0 7px 7px;
   background: #fff;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
 .gps-inner-block {
@@ -694,38 +702,65 @@ textarea {
 .gps-inner-block-heading {
   background: #f2fafd;
   font-weight: 600;
-  padding: 12px 10px 12px 10px;
+  padding: 2px 10px 2px 10px;
   border-radius: 7px 7px 0 0;
   font-size: 11px;
   color: #404040;
 }
 
+.gps-inner-block .data-row {
+  padding: 5px 0px 5px 0px;
+}
+
+.gps-inner-block .data-row:hover {
+  background: #f2fafd;
+}
+
 .gps-inner-block .data-col1 {
-  width: 25%;border:solid 1px red;text-align: left;
+  width: 20%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
 }
 
 .gps-inner-block .data-col2 {
-  width: 25%;border:solid 1px red;text-align: center;
+  width: 23%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
 }
 
 .gps-inner-block .data-col3 {
-  width: 25%;border:solid 1px red;text-align: left;
+  width: 37%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
 }
 
 .gps-inner-block .data-col4 {
-  width: 25%;border:solid 1px red;
+  width: 20%;
   text-align: right;
+  padding: 4px 0px 4px 0px;
 }
 
-.gps-inner-block-container{
-    padding: 7px 5px;
-   
-    background: #fff;
-    border-radius: 0 0 7px 7px;
+.gps-inner-block-container {
+  padding: 7px 5px;
+  background: #fff;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0px 1px 1px #ccc;
 }
 
-.gps-inner-block-content{
-    height: 637px;
-    overflow: auto;
-    padding: 5px;
+.gps-inner-block-content {
+  height: 639px;
+  overflow: auto;
+  padding: 5px;
+}
+
+.gps-green-box {
+  background: #1fb14c;
+  color: #fff;
+  padding: 2px 5px 2px 5px;
+}
+
+.gps-red-box {
+  background: #ff5a5e;
+  color: #fff;
+  padding: 2px 5px 2px 5px;
 }
