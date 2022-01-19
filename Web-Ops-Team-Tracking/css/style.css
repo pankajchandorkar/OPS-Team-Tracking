@@ -337,6 +337,13 @@ textarea {
 
 .start-date {
   width: 150px;
+  position: relative;
+}
+
+.start-date svg {
+  position: absolute;
+  right: 3px;
+  top: 12px;
 }
 
 .start-time {
