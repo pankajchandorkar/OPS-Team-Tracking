@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css4?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mobile Ops Team Tracking</title>
+</head>
+
+<body>
+    <header class="homepage-header">
+        <div class="homepage-menu-icon">
+            <div class="homepage-menu-bar"></div>
+            <div class="homepage-menu-bar"></div>
+            <div class="homepage-menu-bar"></div>
+        </div>
+        <div class="homepage-heading">
+            Ops Team Tracking
+        </div>
+    </header>
+    <section class="form-container">
+        <div class="form-input-wrap dF">
+            <div class="widthTxt opname pr">
+                <input class="form-input" type="text" name="txtSpokenPerson" id="txtSpokenPerson"
+                    placeholder="Operator Name (CRS ID)">
+                <div class="triangleshape"></div>
+            </div>
+            <div class="widthBtn">
+                <button class="btn-operator"></button>
+            </div>
+        </div>
+        <div class="form-input-wrap">
+            <div class="width-full pl10">
+                <span class="custome_radio">
+                    <input type="radio" name="rdoCallType" id="rdoCallType-1" value="1" checked="true">
+                    <label for="rdoCallType-1">Physical Meeting</label>
+                </span>
+                <span class="custome_radio">
+                    <input type="radio" name="rdoCallType" id="rdoCallType-2" value="2">
+                    <label for="rdoCallType-2">Call</label>
+                </span>
+                <span class="custome_radio">
+                    <input type="radio" name="rdoCallType" id="rdoCallType-3" value="3">
+                    <label for="rdoCallType-3">Exotel Call</label>
+                </span>
+            </div>
+        </div>
+        <div class="form-input-wrap">
+            <div class="width-full">
+                <input class="form-input" type="text" name="txtSpokenPerson" id="txtSpokenPerson"
+                    placeholder="Spoken/Met Person">
+            </div>
+        </div>
+        <div class="form-input-wrap dF">
+            <div class="width-half ipr">
+                <input class="form-input" type="text" name="txtContactNumber" id="txtContactNumber"
+                    placeholder="Contact Number">
+            </div>
+            <div class="width-half ipl start-date">
+                <input readonly="readonly" class="form-input" type="text" name="txtStartDate" id="txtStartDate"
+                    placeholder="Date">
+                <svg fill="#999999" width="20" height="15" class="svg-inline--fa fa-calendar fa-w-14" aria-hidden="true"
+                    focusable="false" data-prefix="far" data-icon="calendar" role="img"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                    <path fill="#757575"
+                        d="M400 64h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zm-6 400H54c-3.3 0-6-2.7-6-6V160h352v298c0 3.3-2.7 6-6 6z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+        <div class="form-input-wrap dF">
+            <div class="width-half ipr pr starttime">
+                <input class="form-input" type="text" name="txtStartTime" id="txtStartTime" placeholder="Start Time">
+                <div class="triangleshape"></div>
+            </div>
+            <div class="width-half ipl pr duration">
+                <input class="form-input" type="text" name="txtDuration" id="txtDuration"
+                    placeholder="Duration in Mins">
+                <div class="triangleshape"></div>
+            </div>
+        </div>
+        <div class="form-input-wrap">
+            <button class="btnSave">Save</button>
+        </div>
+    </section>
+    <section class="result-container">
+        <div class="result-list">
+            <div class="row-data">
+                <div class="title">
+                    Commercial <span class="txtsmall">(Bus, Cargo, MAVEN)</span>
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    CRS Support
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    Microsite
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    Redbus, PayTM
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    SMS
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    ETIM
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    IamGDS
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    GPS Opportunity
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    Feature Explanation/ Configuration
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+            <div class="row-data ">
+                <div class="title">
+                    Collection
+                </div>
+                <div class="link">
+                    <a href="/">Comment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
