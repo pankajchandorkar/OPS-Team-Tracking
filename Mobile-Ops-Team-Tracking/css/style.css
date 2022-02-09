@@ -62,10 +62,10 @@ body {
 .custome_radio:checked + label:before {
   content: "";
   position: absolute;
-  left: -2px;
-  top: -2px;
-  width: 14px;
-  height: 14px;
+  left: -3px;
+  top: -3px;
+  width: 16px;
+  height: 16px;
   border: 2px solid #45668f;
   border-radius: 100%;
   background: #fff;
@@ -74,12 +74,12 @@ body {
 .custome_radio:checked + label:after,
 .custome_radio:not(:checked) + label:after {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   background: #00aeef;
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 2px;
+  left: 2px;
   border-radius: 100%;
 }
 
@@ -97,7 +97,6 @@ body {
 
 .active_custome_radio {
   background: #3a587a;
-  border-radius: inherit;
 }
 
 .dF {
@@ -156,7 +155,7 @@ body {
 
 .form-container {
   background: #44678f;
-  height: 350px;
+  height: 420px;
   padding: 10px 17px 10px 17px;
   margin-top: 45px;
 }
@@ -164,7 +163,7 @@ body {
 .form-input-wrap {
   width: 100%;
   position: relative;
-  margin: 10px 0;
+  margin: 16px 0;
 }
 
 .width-full {
@@ -198,16 +197,27 @@ body {
 .call-type-input-wrap {
   width: 100%;
   height: 48px;
-  border: solid 1px #a2b3c7;
+
   display: flex;
-  border-radius: 5px;
 }
 .call-type-input {
   padding: 13px 5px 13px 13px;
 }
+
+.call-type-input:first-child {
+  border: solid 1px #a2b3c7;
+  border-radius: 5px 0 0 5px;
+  border-right-width: 0;
+}
+
+.call-type-input:last-child {
+  border: solid 1px #a2b3c7;
+  border-radius: 0px 5px 5px 0px;
+  border-left-width: 0;
+}
+
 .call-type-brd {
-  border-left: solid 1px #a2b3c7;
-  border-right: solid 1px #a2b3c7;
+  border: solid 1px #a2b3c7;
 }
 
 .start-date svg {
@@ -546,4 +556,181 @@ body {
 .data-wrap-right {
   width: 20%;
   text-align: right;
+}
+
+/* slide menu css */
+.slide-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  background: #fff;
+  z-index: 1;
+  display: none;
+}
+
+.menu-header {
+  background: #3e5c80;
+  height: 53px;
+  width: 100%;
+  padding: 10px 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-heading {
+  position: relative;
+  top: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 85%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  width: 10%;
+  display: inline-block;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.menu-list {
+  overflow: auto;
+  width: 100%;
+  height: calc(100% - 53px);
+}
+
+.menu-item-wrap {
+  width: 100%;
+}
+
+.menu-item-wrap a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #666;
+  font-size: 13pt;
+  align-items: center;
+}
+
+.menu-item-wrap .menu-text {
+  padding-left: 15px;
+}
+
+/* slide list css */
+.slide-list-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+
+.slide-list-contain {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  z-index: 1000;
+  min-height: 100%;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: 0.6s ease transform;
+  -o-transition: 0.6s ease transform;
+  transition: 0.6s ease transform;
+  background-color: #fff;
+  will-change: transform;
+}
+
+.slide-list-contain.show-slide-list {
+  -webkit-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+
+.slide-list-header-container {
+  display: flex;
+  background: #3e5c80;
+  height: 53px;
+  width: 100%;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.slide-list-header {
+  width: 100%;
+}
+
+.slide-list-back-icon {
+  padding: 3px 3px;
+}
+
+.slide-list-heading {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.sl-header-wrap {
+  display: flex;
+  background: #3e5c80;
+  height: 53px;
+  width: 100%;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sl-back-icon {
+  padding: 3px 3px;
+}
+.sl-heading {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.sl-searchbox {
+  position: relative;
+  margin-top: 53px;
+  box-shadow: 0px 3px 5px #ccc;
+}
+
+.sl-searchbox svg {
+  position: absolute;
+  top: 10px;
+  left: 13px;
+}
+
+.sl-search-input {
+  width: 100%;
+  border: none;
+  padding: 12px 5px 12px 35px;
 }
