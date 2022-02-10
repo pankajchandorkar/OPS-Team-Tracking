@@ -118,6 +118,13 @@ body {
 .pl10 {
   padding-left: 10px;
 }
+
+.txtOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .homepage-header {
   display: flex;
   background: #ffffff;
@@ -183,7 +190,7 @@ body {
 }
 
 .form-input {
-  padding: 17px 7px 16px 7px;
+  padding: 17px 7px 16px 15px;
   border-radius: 5px;
   width: 100%;
   border: none;
@@ -399,7 +406,7 @@ body {
 .page-tab {
   width: 50%;
   background: #44678f;
-  padding: 13px 10px;
+  padding: 15px 10px;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
@@ -453,8 +460,8 @@ body {
 .gps-details-heading {
   background: #f2fafd;
   font-weight: 600;
-  padding: 2px 10px 2px 10px;
-  font-size: 11px;
+  padding: 2px 5px 2px 5px;
+  font-size: 14px;
   color: #404040;
 }
 
@@ -469,35 +476,35 @@ body {
 }
 
 .view-details .data-col1 {
-  width: 20%;
+  width: 26%;
   text-align: left;
   padding: 4px 0px 4px 0px;
 }
 
 .view-details .data-col2 {
-  width: 23%;
+  width: 30%;
   text-align: left;
   padding: 4px 0px 4px 0px;
 }
 
 .view-details .data-col3 {
-  width: 37%;
+  width: 29%;
   text-align: left;
   padding: 4px 0px 4px 0px;
 }
 
 .view-details .data-col4 {
-  width: 20%;
+  width: 15%;
   text-align: right;
   padding: 4px 0px 4px 0px;
 }
 
 .gps-details-container {
-  padding: 5px 10px;
+  padding: 5px 5px;
   background: #fff;
   border-radius: 0 0 7px 7px;
   box-shadow: 0px 1px 1px #ccc;
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .gps-green-box {
@@ -725,12 +732,150 @@ body {
 
 .sl-searchbox svg {
   position: absolute;
-  top: 10px;
+  top: 16px;
   left: 13px;
 }
 
 .sl-search-input {
   width: 100%;
   border: none;
-  padding: 12px 5px 12px 35px;
+  padding: 17px 5px 16px 35px;
+  height: 48px;
+  font-size: 16px;
+}
+
+.slide-list-contain ul {
+  list-style: none;
+}
+
+.sites-atc-city-matched {
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.sites-atc-city-matched ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sites-atc-city-matched span {
+  margin-left: 10px;
+}
+
+.sites-atc-city-matched li {
+  text-transform: capitalize;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  text-overflow: ellipsis;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sites-atc-city-matched li:first-child {
+  border: none;
+}
+
+.sites-atc-city-matched li.sites-atc-all-results,
+.sites-atc-city-matched li.sites-atc-popular-results {
+  padding-top: 55px;
+}
+
+.sites-atc-city-matched li.sites-atc-all-results:before,
+.sites-atc-city-matched li.sites-atc-popular-results:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 35px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sites-atc-city-matched li label {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  vertical-align: bottom;
+}
+
+.sites-atc-city-matched label.sites-radio {
+  position: relative;
+  display: inline-block !important;
+  width: 20px !important;
+  height: 20px !important;
+  cursor: pointer;
+  padding: 0;
+}
+
+label.sites-radio:before {
+  content: " ";
+  border: 2px solid #46668d;
+  border-radius: 50%;
+}
+
+label.sites-radio:before,
+label.sites-radio i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+label.sites-radio input {
+  margin: 0;
+  visibility: hidden;
+}
+
+label.sites-radio i {
+  width: 10px;
+  height: 10px;
+  display: none;
+  background: #231f20;
+  border-radius: 50%;
+}
+
+label.sites-radio.sites-radio-blue i {
+  background: #46668d;
+}
+
+label.sites-radio input:checked + i {
+  display: block;
+}
+
+.slide-list-contain .sites-atc-city-matched.sites-transform-support {
+  height: calc(100% - 107px);
+  overflow: auto;
+}
+
+.slide-list-contain .sites-atc-city-matched {
+  position: absolute;
+  text-align: left;
+  top: 107px;
+  left: 0;
+  min-height: 50px;
+}
+
+.calender-slide {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  min-height: 100%;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: 0.6s ease transform;
+  -o-transition: 0.6s ease transform;
+  transition: 0.6s ease transform;
+  background-color: #fff;
+  will-change: transform;
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css4?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/slide-datepicker.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Mobile Ops Team Tracking</title>
 </head>
@@ -241,7 +242,7 @@ v1.2l7.7,7.7l2.3-2.3L19.3,17z M10,17c-3.8,0-6.9-3.1-6.9-6.9S6.2,3.1,10,3.1S17,6.
                     </div>
                 </div>
 
-                <div class="slide-list-header start-time" style="display:none;">
+                <div class="slide-list-header startTimeSearch" style="display:none;">
                     <div class="sl-header-wrap">
                         <div class="sl-back-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="26" width="26"
@@ -261,7 +262,7 @@ v1.2l7.7,7.7l2.3-2.3L19.3,17z M10,17c-3.8,0-6.9-3.1-6.9-6.9S6.2,3.1,10,3.1S17,6.
                     </div>
                 </div>
 
-                <div class="slide-list-header duration" style="display:none;">
+                <div class="slide-list-header durationInMinSearch" style="display:none;">
                     <div class="sl-header-wrap">
                         <div class="sl-back-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="26" width="26"
@@ -284,12 +285,29 @@ v1.2l7.7,7.7l2.3-2.3L19.3,17z M10,17c-3.8,0-6.9-3.1-6.9-6.9S6.2,3.1,10,3.1S17,6.
 
             </div>
             <div class="slide-list-body">
-                <div id="fromCityList" class="operatorNameSearch slidelist"></div>
+                <!-- drop down list will be load/append in respective div -->
+                <div id="txtOperatorNameList" class="operatorNameSearch slidelist"></div>
+                <div id="txtStartTimeList" class="startTimeSearch slidelist"></div>
+                <div id="txtDurationInMinList" class="durationInMinSearch slidelist"></div>
             </div>
         </div>
     </section>
     <!-- slide drop down list end -->
+    <!-- slide calender start-->
+    <div class="calender-slide" id="calSlide1">
+        <div class="calender-slide-head" >
+            <div class="slide-head-top">
+                <span id="closeBtn1" class="calendar-close">&#x2715;</span> 
+                <span class="sites-middle-content"><span>Start Date</span></span> 
+            </div>
+            <table class="calWeek"> <tbody><tr> <td>Mon</td> <td>Tue</td> <td>Wed</td> <td>Thu</td> <td>Fri</td> <td>Sat</td> <td>Sun</td> </tr> </tbody></table>
+        </div> 
+        <div id="container1" class="pickadaycontainer">
+        </div>
+    </div>
+    <!-- slide calender end -->
     <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/pikaday.js"></script>
     <script src="./js/common.js"></script>
 </body>
 
