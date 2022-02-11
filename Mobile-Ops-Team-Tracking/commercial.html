@@ -19,7 +19,7 @@
         </div>
         <div class="page-heading">Commercial</div>
     </header>
-    <section class="page-content">
+    <section class="page-content commercial">
         <div class="page-tabs">
             <div class="page-tab active" id="write-comment">Write Comment</div>
             <div class="page-tab" id="view-details">View Details</div>
@@ -37,22 +37,25 @@
                         Bus
                     </div>
                     <div class="commercial-details-block1-data">
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommBus" id="rdoCommBus-1" value="1" checked="true">
-                            <label for="rdoCommBus-1">Monthly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommBus" id="rdoCommBus-2" value="2">
-                            <label for="rdoCommBus-2">Quaterly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommBus" id="rdoCommBus-3" value="3">
-                            <label for="rdoCommBus-3">Half Yearly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommBus" id="rdoCommBus-4" value="4">
-                            <label for="rdoCommBus-4">Yearly</label>
-                        </span>
+                        <div class="commercial-radio-wrap">
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-1" value="1"
+                                    checked="checked">
+                                <label for="rdoCommBus-1">Monthly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-2" value="2">
+                                <label for="rdoCommBus-2">Quaterly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-3" value="3">
+                                <label for="rdoCommBus-3">Half Yearly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommBus" id="rdoCommBus-4" value="4">
+                                <label for="rdoCommBus-4">Yearly</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="commercial-details-block1-line">
                         <div class="border-line"></div>
@@ -71,27 +74,33 @@
                         Cargo
                     </div>
                     <div class="commercial-details-block1-data">
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommCargo" id="rdoCommCargo-1" value="1" checked="checked" />
-                            <label for="rdoCommCargo-1">Monthly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommCargo" id="rdoCommCargo-2" value="2"/>
-                            <label for="rdoCommCargo-2">Quaterly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommCargo" id="rdoCommCargo-3" value="3"/>
-                            <label for="rdoCommCargo-3">Half Yearly</label>
-                        </span>
-                        <span class="custome_radio">
-                            <input type="radio" name="rdoCommCargo" id="rdoCommCargo-4" value="4"/>
-                            <label for="rdoCommCargo-4">Yearly</label>
-                        </span>
+                        <div class="commercial-radio-wrap">
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-1"
+                                    value="1" checked="checked">
+                                <label for="rdoCommCargo-1">Monthly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-2"
+                                    value="2">
+                                <label for="rdoCommCargo-2">Quaterly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-3"
+                                    value="3">
+                                <label for="rdoCommCargo-3">Half Yearly</label>
+                            </div>
+                            <div class="">
+                                <input class="custome_radio" type="radio" name="rdoCommCargo" id="rdoCommCargo-4"
+                                    value="4">
+                                <label for="rdoCommCargo-4">Yearly</label>
+                            </div>
+                        </div>
                     </div>
                     <div class="commercial-details-block1-line">
                         <div class="border-line"></div>
                     </div>
-                    <!--<div class="commercial-details-block1-data">
+                    <div class="commercial-details-block1-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 Monthly Volume (+GST)
@@ -104,7 +113,7 @@
                     <div class="commercial-details-block1-heading">
                         Maven
                     </div>
-                    <div class="commercial-details-block1-data bottom-round">
+                    <div class="commercial-details-block1-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 Monthly Per User (+GST)
@@ -113,10 +122,10 @@
                                 ₹1234
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-                <!--<div class="commercial-inner-block2">
-                    <div class="commercial-inner-block2-data">
+                <div class="commercial-details-block2">
+                    <div class="commercial-details-block2-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 Number Of Branches Approved
@@ -126,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block2-data">
+                    <div class="commercial-details-block2-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 Number Of MAC Approved
@@ -136,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block2-data">
+                    <div class="commercial-details-block2-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 BUS CRS Enabled
@@ -146,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block2-data">
+                    <div class="commercial-details-block2-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 No Of Branches Booked (30 days)
@@ -156,7 +165,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block2-data">
+                    <div class="commercial-details-block2-data">
                         <div class="data-wrap">
                             <div class="data-wrap-left">
                                 No of User Booked (30 days)
@@ -167,54 +176,53 @@
                         </div>
                     </div>
                 </div>
-                <div class="commercial-inner-block3">
-                    <div class="commercial-inner-block3-heading">
-                        <div class="data-row">
-                            <div class="data-col1">Branch Name (Monthly Amt)</div>
-                            <div class="data-col2">Bus Amt</div>
-                            <div class="data-col3">Cargo Amt</div>
+                <div class="commercial-details-block3">
+                    <div class="commercial-details-block3-heading">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1">Branch Name (Mnt Amt)</div>
+                            <div class="commercial-data-col2">Bus Amt</div>
+                            <div class="commercial-data-col3">Cargo Amt</div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block3-data">
-                        <div class="data-row">
-                            <div class="data-col1">Mantis Technologies Bangalore</div>
-                            <div class="data-col2"> ₹1234</div>
-                            <div class="data-col3"> ₹1234</div>
+                    <div class="commercial-details-block3-data">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1 txtOverflow">Mantis Technologies Bangalore</div>
+                            <div class="commercial-data-col2"> ₹2000</div>
+                            <div class="commercial-data-col3"> ₹2500</div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block3-data">
-                        <div class="data-row">
-                            <div class="data-col1">Mantis Technologies Bangalore</div>
-                            <div class="data-col2"> ₹1234</div>
-                            <div class="data-col3"> ₹1234</div>
+                    <div class="commercial-details-block3-data">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1 txtOverflow">Mantis Technologies Bangalore</div>
+                            <div class="commercial-data-col2"> ₹5000</div>
+                            <div class="commercial-data-col3"> ₹5700</div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block3-data">
-                        <div class="data-row">
-                            <div class="data-col1">Mantis Technologies Bangalore</div>
-                            <div class="data-col2"> ₹1234</div>
-                            <div class="data-col3"> ₹1234</div>
+                    <div class="commercial-details-block3-data">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1 txtOverflow">Mantis Technologies Bangalore</div>
+                            <div class="commercial-data-col2"> ₹1500</div>
+                            <div class="commercial-data-col3"> ₹1200</div>
                         </div>
                     </div>
-                    <div class="commercial-inner-block3-data">
-                        <div class="data-row">
-                            <div class="data-col1">Mantis Technologies Bangalore</div>
-                            <div class="data-col2"> ₹1234</div>
-                            <div class="data-col3"> ₹1234</div>
+                    <div class="commercial-details-block3-data">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1 txtOverflow">Mantis Technologies Bangalore</div>
+                            <div class="commercial-data-col2"> ₹25000</div>
+                            <div class="commercial-data-col3"> ₹20000</div>
                         </div>
                     </div>
                     <div class="commercial-details-block1-line">
                         <div class="border-line"></div>
                     </div>
-                    <div class="commercial-inner-block3-data footer">
-                        <div class="data-row">
-                            <div class="data-col1">&nbsp;</div>
-                            <div class="data-col2 txtBold"> ₹1234</div>
-                            <div class="data-col3 txtBold"> ₹1234</div>
+                    <div class="commercial-details-block3-data txtBold">
+                        <div class="commercial-data-row">
+                            <div class="commercial-data-col1">&nbsp;</div>
+                            <div class="commercial-data-col2 txtBold"> ₹33500</div>
+                            <div class="commercial-data-col3 txtBold"> ₹29400</div>
                         </div>
                     </div>
-                </div> -->
-
+                </div>
             </div>
         </div>
     </section>

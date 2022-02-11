@@ -24,6 +24,36 @@ body {
   letter-spacing: 0.03rem;
 }
 
+.dF {
+  display: flex;
+}
+
+.pr {
+  position: relative;
+}
+
+.ipl {
+  padding-left: 4px;
+}
+
+.ipr {
+  padding-right: 4px;
+}
+
+.pl10 {
+  padding-left: 10px;
+}
+
+.txtBold {
+  font-weight: bold;
+}
+
+.txtOverflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .custome_radio {
   margin: 0;
 }
@@ -97,32 +127,6 @@ body {
 
 .active_custome_radio {
   background: #3a587a;
-}
-
-.dF {
-  display: flex;
-}
-
-.pr {
-  position: relative;
-}
-
-.ipl {
-  padding-left: 4px;
-}
-
-.ipr {
-  padding-right: 4px;
-}
-
-.pl10 {
-  padding-left: 10px;
-}
-
-.txtOverflow {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .homepage-header {
@@ -364,205 +368,6 @@ body {
   color: #828282;
   font-weight: 500;
   font-size: 11px;
-}
-
-/* GPS Opportunity Page CSS */
-.page-header {
-  display: flex;
-  background: #3e5c80;
-  height: 53px;
-  width: 100%;
-  padding: 10px 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.page-back-icon {
-  padding: 3px 3px;
-}
-
-.page-heading {
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  padding-left: 15px;
-}
-
-.page-content {
-  margin-top: 53px;
-}
-
-.page-tabs {
-  display: flex;
-  width: 100%;
-  box-shadow: 0px 1px 5px #aaa;
-}
-
-.page-tab {
-  width: 50%;
-  background: #44678f;
-  padding: 15px 10px;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-bottom: solid 4px #44678f;
-}
-
-.page-tab.active {
-  border-bottom: solid 4px #f9aa33;
-}
-
-.page-tabs-content {
-  margin: 0;
-  padding: 0;
-}
-
-.write-comment {
-  display: block;
-  background: #ffffff;
-  width: 100vw;
-  height: 76vh;
-}
-
-.write-comment form {
-  height: inherit;
-}
-
-.taComment {
-  width: 100%;
-  height: 100%;
-  border: none;
-  padding: 10px;
-}
-
-.view-details {
-  display: none;
-  margin-top: 3px;
-}
-
-.btnSubmit {
-  background: #f9aa33;
-  border: none;
-  padding: 17px 0px;
-  color: #fff;
-  text-transform: uppercase;
-  width: 100%;
-}
-
-.gps-details-heading {
-  background: #f2fafd;
-  font-weight: 600;
-  padding: 2px 5px 2px 5px;
-  font-size: 14px;
-  color: #404040;
-}
-
-.view-details .data-row {
-  display: flex;
-  width: 100%;
-  padding: 5px 0px 5px 0px;
-}
-
-.view-details .data-row:hover {
-  background: #f2fafd;
-}
-
-.view-details .data-col1 {
-  width: 26%;
-  text-align: left;
-  padding: 4px 0px 4px 0px;
-}
-
-.view-details .data-col2 {
-  width: 30%;
-  text-align: left;
-  padding: 4px 0px 4px 0px;
-}
-
-.view-details .data-col3 {
-  width: 29%;
-  text-align: left;
-  padding: 4px 0px 4px 0px;
-}
-
-.view-details .data-col4 {
-  width: 15%;
-  text-align: right;
-  padding: 4px 0px 4px 0px;
-}
-
-.gps-details-container {
-  padding: 5px 5px;
-  background: #fff;
-  border-radius: 0 0 7px 7px;
-  box-shadow: 0px 1px 1px #ccc;
-  font-size: 14px;
-}
-
-.gps-green-box {
-  background: #1fb14c;
-  color: #fff;
-  padding: 2px 5px 2px 5px;
-}
-
-.gps-red-box {
-  background: #ff5a5e;
-  color: #fff;
-  padding: 2px 5px 2px 5px;
-}
-
-/* Commercial Page CSS */
-
-.commercial-details-block1 {
-  border: solid 1px #e7e7e7;
-  height: 315px;
-  border-radius: 0 0 7px 7px;
-  box-shadow: 0px 1px 1px #ccc;
-}
-
-.commercial-details-block1-heading {
-  background: #f2fafd;
-  font-weight: 600;
-  padding: 12px 12px 12px 12px;
-  color: #404040;
-}
-
-.commercial-details-block1-data {
-  background: #fff;
-  padding: 12px 12px 12px 12px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.commercial-details-block1-line {
-  padding: 0px 12px 0px 12px;
-  background: #fff;
-}
-
-.border-line {
-  border-bottom: solid 1px #d9d9d9;
-}
-
-.data-wrap {
-  width: 100%;
-  display: flex;
-}
-
-.data-wrap-left {
-  width: 80%;
-}
-
-.data-wrap-right {
-  width: 20%;
-  text-align: right;
 }
 
 /* slide menu css */
@@ -878,4 +683,347 @@ label.sites-radio input:checked + i {
   transition: 0.6s ease transform;
   background-color: #fff;
   will-change: transform;
+}
+
+/* GPS Opportunity Page CSS */
+.page-header {
+  display: flex;
+  background: #3e5c80;
+  height: 53px;
+  width: 100%;
+  padding: 10px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.page-back-icon {
+  padding: 3px 3px;
+}
+
+.page-heading {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.page-content {
+  margin-top: 53px;
+}
+
+.page-tabs {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 1px 5px #aaa;
+}
+
+.page-tab {
+  width: 50%;
+  background: #44678f;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-bottom: solid 4px #44678f;
+}
+
+.page-tab.active {
+  border-bottom: solid 4px #f9aa33;
+}
+
+.page-tabs-content {
+  margin: 0;
+  padding: 0;
+}
+
+.write-comment {
+  display: block;
+  background: #ffffff;
+  width: 100vw;
+  height: 76vh;
+}
+
+.write-comment form {
+  height: inherit;
+}
+
+.taComment {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+}
+
+.view-details {
+  display: none;
+  margin-top: 3px;
+}
+
+.btnSubmit {
+  background: #f9aa33;
+  border: none;
+  padding: 17px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.gps-details-heading {
+  background: #f2fafd;
+  font-weight: 600;
+  padding: 2px 5px 2px 5px;
+  font-size: 14px;
+  color: #404040;
+}
+
+.view-details .gps-data-row {
+  display: flex;
+  width: 100%;
+  padding: 5px 0px 5px 0px;
+}
+
+.view-details .gps-data-col1 {
+  width: 26%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
+}
+
+.view-details .gps-data-col2 {
+  width: 30%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
+}
+
+.view-details .gps-data-col3 {
+  width: 29%;
+  text-align: left;
+  padding: 4px 0px 4px 0px;
+}
+
+.view-details .gps-data-col4 {
+  width: 15%;
+  text-align: right;
+  padding: 4px 0px 4px 0px;
+}
+
+.gps-details-container {
+  padding: 5px 5px;
+  background: #fff;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0px 1px 1px #ccc;
+  font-size: 14px;
+}
+
+.gps-green-box {
+  background: #1fb14c;
+  color: #fff;
+  padding: 2px 5px 2px 5px;
+}
+
+.gps-red-box {
+  background: #ff5a5e;
+  color: #fff;
+  padding: 2px 5px 2px 5px;
+}
+
+/* Commercial Page CSS */
+
+.commercial-details-block1 {
+  box-shadow: 0px 2px 5px #ccc;
+}
+
+.commercial-details-block1-heading {
+  background: #f2fafd;
+  font-weight: 600;
+  padding: 16px 12px 16px 12px;
+  color: #404040;
+  height: 48px;
+  font-size: 14px;
+}
+
+.commercial-details-block1-data {
+  background: #fff;
+  padding: 14px 12px 14px 12px;
+  display: flex;
+  justify-content: space-between;
+  height: 48px;
+  font-size: 14px;
+}
+
+.commercial-details-block1-line {
+  padding: 0px 12px 0px 12px;
+  background: #fff;
+}
+
+.border-line {
+  border-bottom: solid 1px #d9d9d9;
+}
+
+.data-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.data-wrap-left {
+  width: 80%;
+}
+
+.data-wrap-right {
+  width: 20%;
+  text-align: right;
+}
+
+.commercial .custome_radio:checked + label,
+.commercial .custome_radio:not(:checked) + label {
+  color: #404040;
+}
+
+.commercial .custome_radio:checked + label:before {
+  border: 2px solid #45668f;
+}
+
+.commercial .custome_radio:checked + label:after,
+.commercial .custome_radio:not(:checked) + label:after {
+  background: #45668f;
+}
+
+.commercial .custome_radio:not(:checked) + label:before {
+  border: 2px solid #757575;
+  left: -3px;
+  top: -3px;
+  width: 16px;
+  height: 16px;
+}
+
+.commercial-radio-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.commercial-details-block2 {
+  margin-top: 10px;
+  box-shadow: 0px 1px 1px #ccc;
+}
+
+.commercial-details-block2-data {
+  background: #fff;
+  padding: 16px 12px 16px 12px;
+  font-size: 14px;
+  height: 48px;
+}
+
+.commercial-details-block3 {
+  margin-top: 10px;
+  box-shadow: 0px 1px 1px #ccc;
+}
+
+.commercial-details-block3-heading {
+  background: #f2fafd;
+  font-weight: 600;
+  padding: 14px 12px 14px 12px;
+  font-size: 14px;
+  color: #404040;
+}
+
+.commercial-details-block3-data {
+  background: #fff;
+  padding: 12px 12px 12px 12px;
+  font-size: 14px;
+}
+
+.view-details .commercial-data-row {
+  display: flex;
+  width: 100%;
+}
+
+.view-details .commercial-data-col1 {
+  width: 57%;
+  text-align: left;
+}
+
+.view-details .commercial-data-col2 {
+  width: 19%;
+  text-align: right;
+}
+
+.view-details .commercial-data-col3 {
+  width: 24%;
+  text-align: right;
+}
+
+/* CRS Support CSS*/
+.crs-container {
+  background: #ffffff;
+ 
+}
+
+.crsFormInputWrap{
+  padding: 12px 17px 0px 17px;
+}
+
+.crs-form-input-wrap:first-child {
+  margin-top: 5px;
+}
+
+.crs-form-input-wrap {
+  width: 100%;
+  position: relative;
+  margin: 20px 0;
+}
+
+.crs-form-input {
+  padding: 16px 7px 15px 15px;
+  border-radius: 5px;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #44678f;
+
+  color: #000000;
+}
+
+.crs-form-input:focus {
+  border: 2px solid #44678f;
+}
+
+.crs-form-label {
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #444444;
+  font-size: 13px;
+  transition: 0.3s ease;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  pointer-events: none;
+
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 95%; */
+  
+}
+
+.activeLabel {
+  color: #574fa2;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 12px;
+  top: -7px;
+  left: 9px;
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+}
+
+.activeLabel.filled {
+  color: #777;
+  font-weight: 500;
 }

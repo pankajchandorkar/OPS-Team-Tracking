@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css4?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Mobile Ops Team Tracking</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="page-back-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="26" width="26" fill="#fff">
+                <path d="M20 11H7.8l5.6-5.6L12 4l-8 8 8 8 1.4-1.4L7.8 13H20v-2z"></path>
+            </svg>
+        </div>
+        <div class="page-heading">CRS Support</div>
+    </header>
+    <section class="page-content crs-support">
+        <div class="page-tabs">
+            <div class="page-tab active" id="write-comment">Write Comment</div>
+            <div class="page-tab" id="view-details">View Details</div>
+        </div>
+        <div class="page-tabs-content">
+            <div class="write-comment">
+                <form action="">
+                    <textarea class="taComment" name="" id="" placeholder="Write Discussion Comment"></textarea>
+                    <button type="submit" class="btnSubmit">Submit</button>
+                </form>
+            </div>
+            <div class="view-details">
+                <div class="crs-container">
+                    <form action="">
+                        <div class="crsFormInputWrap">
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">01: CRS EXE Installation</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">02: New Service/ Trip Configuration</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">03: Changes in Existing Service/ Trip</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">04: Extra Service/ Trip Configuration</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">05: Quota Add/ Remove (Branch/ Agent)</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">06: Chart Transfer/ Seat Edit/ Arrangement
+                                    Transfer</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">07: Master Bus Number/ Bus No Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">08: User Creation & Role Right Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">09: Driver/ Pickup Man Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">10: Branch/ Agent Creation</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">11: Chart Creation/ Sharing</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">12: Policy Related (Discount, Loyalty etc)</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">13: MAC Request</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">14: Report Enable/ Disable</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">15: GPS Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">16: MAVEN Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">17: Online Issue</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">18: Payment Related</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">19: Software Bugs</label>
+                            </div>
+                            <div class="crs-form-input-wrap">
+                                <input class="crs-form-input" type="text" onfocus="focusHandler(this);"
+                                    onblur="blurHandler(this);">
+                                <label class="crs-form-label">20: Others</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btnSubmit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>
