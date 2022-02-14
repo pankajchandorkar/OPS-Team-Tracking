@@ -315,7 +315,19 @@ $(document).ready(function () {
         //for mange active tab content area
         $(".page-tabs-content > div").hide();
         $(".page-tabs-content div[class='" + tabId + "']").show();
+
+        //for focus on tab selected
+        if (tabId == "write-comment") {
+            $(".page-tabs-content div[class='" + tabId + "'] textarea").focus();
+        } else {
+            $(".page-tabs-content div[class='" + tabId + "'] input:first").focus();
+        }
+
     });
+
+    if ($(".page-content textarea").length) {
+        $(".page-content textarea").focus();
+    }
 
     //for back page
     $(".page-back-icon").on("click", function () {
@@ -331,11 +343,11 @@ $(document).ready(function () {
 function focusHandler(obj) {
     var inputId = $(obj).attr("id");
     var labelRef = $(obj).next("label");
-   // switch (inputId) {
-        //case 'txtQuestion1':
-            labelRef.addClass("activeLabel");
-            labelRef.removeClass("filled");
-            //break;
+    // switch (inputId) {
+    //case 'txtQuestion1':
+    labelRef.addClass("activeLabel");
+    labelRef.removeClass("filled");
+    //break;
     //}
 }
 
@@ -343,12 +355,12 @@ function blurHandler(obj) {
     var inputId = $(obj).attr("id");
     var labelRef = $(obj).next("label");
     //switch (inputId) {
-        //case 'txtQuestion1':
-            if ($(obj).val() == '' || $(obj).val() == null) {
-                labelRef.removeClass("activeLabel");
-            } else {
-                labelRef.addClass("filled");
-            }
-            //break;
+    //case 'txtQuestion1':
+    if ($(obj).val() == '' || $(obj).val() == null) {
+        labelRef.removeClass("activeLabel");
+    } else {
+        labelRef.addClass("filled");
+    }
+    //break;
     //}
 }
